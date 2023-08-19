@@ -1,0 +1,23 @@
+spring:
+  kafka:
+    topic:
+      name: ${KAFKA_TOPIC_NAME:employee-topic}
+    consumer:
+      group-id: ${KAFKA_GROUP_ID:employee-group}
+    bootstrap-servers: ${KAFKA_URL:localhost:9092}
+  application:
+    name: mail-server
+  mail:
+    host: smtp.something.com
+    port: 123
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+server:
+  port: 8070
+
+
