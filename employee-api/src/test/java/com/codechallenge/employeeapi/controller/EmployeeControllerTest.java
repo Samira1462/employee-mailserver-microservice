@@ -184,7 +184,7 @@ class EmployeeControllerTest {
                 .lastName("Radmaneshfar")
                 .email("Samira.Radmaneshfar@gmail.com")
                 .birthday(birthday)
-                .hobbies(List.of())
+                .hobbies(Set.of("Reading, Swimming"))
                 .build();
         given(serviceUnderTest.add(any(Employee.class)))
                 .willAnswer((invocation)-> invocation.getArgument(0));
@@ -214,7 +214,7 @@ class EmployeeControllerTest {
                 .lastName("Radmaneshfar")
                 .email("Samira.Radmaneshfar@gmail.com")
                 .birthday(birthday)
-                .hobbies(List.of())
+                .hobbies("Reading, Swimming")
                 .build();
 
         EmployeeDto updatedEmployee = EmployeeDto.builder()
@@ -222,7 +222,7 @@ class EmployeeControllerTest {
                 .lastName("Radman")
                 .email("Samira.Radmaneshfar@gmail.com")
                 .birthday(birthday)
-                .hobbies(List.of())
+                .hobbies(Set.of("Reading, Swimming"))
                 .build();
 
         given(serviceUnderTest.getEmployee(any(UUID.class)))
