@@ -36,22 +36,18 @@ The application meets the following criteria:
 
 ## Installation and Setup
 
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/Samira1462/employee-mailserver-microservice/tree/master/employee-api
-   
 
-2. Install dependencies:
+1. Install dependencies:
 install docker base on O.S. 
 
-3. Build and run the application:
+2. Build and run the application:
    ```sh 
    docker-compose down && docker-compose build --no-cache && docker-compose up
 
-4. Go to the root of the application where build.gradle and Run execute the below command
+3. Go to the root of the application where build.gradle and Run execute the below command
    
    ```sh  
    ./gradlew bootRun
-5. Access the Swagger API documentation:
+4. Access the Swagger API documentation:
    http://localhost:8080/swagger-ui/index.html#/employee-controller/update
 
