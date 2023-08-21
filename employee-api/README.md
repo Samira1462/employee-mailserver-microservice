@@ -38,7 +38,7 @@ The application meets the following criteria:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/Samira1462/spring-challenge/tree/main/employee-api
+   git clone https://github.com/Samira1462/employee-mailserver-microservice/tree/master/employee-api
    
 
 2. Install dependencies:
