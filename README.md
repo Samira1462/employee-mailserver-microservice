@@ -11,7 +11,7 @@ This project demonstrates a microservices architecture using Spring Boot and Apa
 
 ## Introduction
 
-This project showcases how to implement a basic microservices architecture for an employee-related application. The "Employee" application generates events when employees are created, and the "Mail Server" application consumes these events to send corresponding email notifications.
+This project showcases how to implement a basic microservices architecture for an employee-related application. The "Employee" application generates events when employees are created, deleted, and updated and the "Mail Server" application consumes these events to send corresponding email notifications.
 
 ## Setup
 
@@ -64,7 +64,7 @@ The project consists of two separate applications:
 ## Running the Applications
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/Samira1462/spring-challenge/tree/main/employee-api
+   git clone https://github.com/Samira1462/employee-mailserver-microservice.git
 
 2. **Build and run the application:**
    ```sh 
