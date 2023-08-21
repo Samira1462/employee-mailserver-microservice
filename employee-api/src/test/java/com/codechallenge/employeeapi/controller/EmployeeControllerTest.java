@@ -230,12 +230,9 @@ class EmployeeControllerTest {
         given(serviceUnderTest.update(any(Employee.class), any(UUID.class)))
                 .willAnswer((invocation)-> invocation.getArgument(0));
 
-        //when
         ResultActions actual = mockMvc.perform(put("/employees/{id}", id.toString())
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(objectMapper.writeValueAsString(updatedEmployee)));
-
-        // then
 
         actual.andExpect(status().isOk())
                 .andDo(print())
